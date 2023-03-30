@@ -1,10 +1,10 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: white;
 }
 
 .description {
@@ -104,7 +104,26 @@
   transform: translateZ(0);
 }
 
-.logo,
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+  margin-top: 30px;
+  width: 250px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 10px 10px 5px 12px lightblue;
+  text-align: center;
+  
+}
+.logo:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transform: rotate(-5deg);
+}
+
 .thirteen {
   position: relative;
 }
