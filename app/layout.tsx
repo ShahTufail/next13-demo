@@ -1,5 +1,9 @@
 import './globals.css'
 
+export const metadata = {
+  title: 'Next 13 app',
+  description: 'Created by Tufail using create next app'
+}
 export default function RootLayout({
   children,
 }: {
@@ -13,11 +17,6 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <nav style={{margin:'2rem', 
-          display: 'grid',
-          alignContent: 'center'}}>
-          <h1>My Next 13 App</h1>
-        </nav>
         {children}
       </body>
     </html>
