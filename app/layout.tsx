@@ -13,8 +13,10 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <nav>
-          <h1>My Navbar</h1>
+        <nav style={{margin:'2rem', 
+          display: 'grid',
+          alignContent: 'center'}}>
+          <h1>My Next 13 App</h1>
         </nav>
         {children}
       </body>
