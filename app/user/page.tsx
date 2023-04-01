@@ -7,7 +7,10 @@ export const metadata: Metadata = {
 }
 
 export default async function User() {
-    const users:  Promise<> = getAllUsers(); 
+    const usersData:  Promise<User[]> = getAllUsers();
+
+    const users = await usersData;
+
   
     const content = (
         <section>
