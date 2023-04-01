@@ -10,6 +10,7 @@ export default function Home() {
     <main className={styles.main}>
       <h1>Hello World!</h1>
       <Link href="/about">Go to About Page</Link>
+      <Link href="/user">Go to User Page</Link>
     </main>
   )
 }
