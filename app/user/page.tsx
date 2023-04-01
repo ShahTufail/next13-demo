@@ -1,6 +1,7 @@
 import Link from "next/link";
 import getAllUsers from "@/lib/getAllUsers";
 import { Metadata } from "next";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
     title: 'Users'
@@ -22,7 +23,11 @@ export default async function User() {
                 return (
                     <>
                         <p key={user.id}>
-                            <Link href={`/users/${user.id}`}>{user.name}</Link>
+                            <Link  className={styles.main}  href={`/users/${user.id}`}>
+                                <h4>{user.name}</h4>
+                                <h6>{user.email}</h6>
+                                <h6>{user.phone}</h6>
+                            </Link>
                         </p>
                         <br />
                     </>
