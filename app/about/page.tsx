@@ -14,7 +14,7 @@ export default function About() {
             <h1>
                 I am about page!
             </h1>
-            <Link href="/">Go to Home Page</Link>
+            <Link href="/">Back to Home Page</Link>
         </div>
     )
 
