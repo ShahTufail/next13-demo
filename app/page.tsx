@@ -1,16 +1,16 @@
-import Image from 'next/image'
-// import { Inter } from '@next/font/google'
-import styles from './page.module.css'
 import Link from "next/link"
+import { Inter } from 'next/font/google'
+import styles from './page.module.css'
 
-// const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>Hello World!</h1>
-      <Link href="/about">Go to About Page</Link>
-      <Link href="/user">Go to User Page</Link>
+    <main>
+      <h1>Home Page</h1>
+      <p>
+        <Link href="/users">Users</Link>
+      </p>
     </main>
   )
 }
